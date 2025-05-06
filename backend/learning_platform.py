@@ -3,7 +3,6 @@ from flask_cors import CORS
 import requests
 
 app = Flask(__name__)
-CORS(app)
 CORS(app, resources={r"/*": {"origins": "*"}})
 # API Keys and Configuration
 YOUTUBE_API_KEY = "AIzaSyCvWGCKf1MSpBwdIndMNh2kyCk4aAfmaMI"
