@@ -1,0 +1,30 @@
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+env/
+.venv/
+venv/
+.Python
+*.sqlite3
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Audio or generated files
+generated_audio.mp3
+
+# Environment variables
+.env
+
