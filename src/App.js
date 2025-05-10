@@ -26,7 +26,7 @@ function HomePage() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>AI Learning Platform</h1>
+        <h1>Brainy</h1>
         <p>Explore educational lessons for kids powered by Artificial Intelligence</p>
       </header>
       <main className="App-main">
