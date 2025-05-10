@@ -2,15 +2,19 @@ from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import requests
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 app = Flask(__name__, static_folder='frontend/build', static_url_path='')
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 # API Keys and Configuration
-YOUTUBE_API_KEY = "AIzaSyCvWGCKf1MSpBwdIndMNh2kyCk4aAfmaMI"
-GOOGLE_CUSTOM_SEARCH_API_KEY = "AIzaSyCV5_9wI9EjuFvUVRSg0_V13dsiLp2GJ_Y"
-GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "d6d97114dca8345f7"
-UNSPLASH_ACCESS_KEY = "-Gc3nNsvL0SQDW6E1kI6JEZwI4NdUeshL4xT6C6ya1M"
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
+GOOGLE_CUSTOM_SEARCH_API_KEY = os.getenv("GOOGLE_CUSTOM_SEARCH_API_KEY")
+GOOGLE_CUSTOM_SEARCH_ENGINE_ID = os.getenv("GOOGLE_CUSTOM_SEARCH_ENGINE_ID")
+UNSPLASH_ACCESS_KEY = os.getenv("UNSPLASH_ACCESS_KEY")
 
 @app.route('/generate-lesson', methods=['POST'])
 def generate_lesson():
