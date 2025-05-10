@@ -1,0 +1,188 @@
+.lesson-page {
+  font-family: 'Comic Sans MS', sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.lesson-page button {
+  background-color: #ffcc00;
+  color: #333;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lesson-page button:hover {
+  background-color: #ffaa00;
+}
+
+.lesson-page h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.lesson-page .lesson-text {
+  margin: 20px 0;
+}
+
+.lesson-page .lesson-text h3 {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.lesson-page .lesson-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.lesson-page .audio-controls {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.lesson-page .audio-controls button {
+  background-color: #ffcc00;
+  color: #333;
+  font-size: 1em;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lesson-page .audio-controls button:hover {
+  background-color: #ffaa00;
+}
+
+.lesson-page .media-section {
+  margin: 30px 0;
+}
+
+.lesson-page .media-section h3 {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.lesson-page .media-section img {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.lesson-page .media-section iframe {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  width: 100%;
+  height: 315px;
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+}
+
+.lesson-page .media-section p {
+  font-style: italic;
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  .lesson-page {
+    padding: 15px;
+  }
+
+  .lesson-page h2 {
+    font-size: 1.5em;
+  }
+
+  .lesson-page .lesson-text h3,
+  .lesson-page .media-section h3 {
+    font-size: 1.3em;
+  }
+
+  .lesson-page .lesson-text p {
+    font-size: 1em;
+  }
+
+  .lesson-page .audio-controls {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .lesson-page .audio-controls button {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .lesson-page .media-section iframe {
+    height: 200px;
+  }
+}
+.slideshow-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.slideshow-image {
+  max-width: 100%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .slideshow-image {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow-image {
+    max-height: 200px;
+  }
+}
+
+.slideshow-caption {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.slideshow-controls button {
+  margin: 0 10px;
+  background-color: #ffcc00;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slideshow-controls button:hover {
+  background-color: #ffaa00;
+}
